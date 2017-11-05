@@ -18,7 +18,7 @@ In order to make use of the project, the user should have the C++ 14 package ins
 
 **3. License**
 
-The files included in this zip file are covered under the MIT license.
+The files included in this repository are covered under the MIT license.
 
 **4. Author**
 
