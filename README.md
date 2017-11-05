@@ -20,6 +20,6 @@ In order to make use of the project, the user should have the C++ 14 package ins
 
 The files included in this zip file are covered under the MIT license.
 
-**4. Authors**
+**4. Author**
 
 Svetlozar Stoev
