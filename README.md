@@ -8,7 +8,7 @@ In order to make use of the project, the user should have the C++ 14 package ins
 **2. Main Components and Getting Started**
 
 - `csv.h` and `csv.cpp` – used to store all the operations needed for the work with csv files.
-- `Matrix.h` and `Matrix.cpp` which defines two new types – `Vector` and `Matrix` as well as the mathematical operations that can be used with them.
+- `Matrix.h` and `Matrix.cpp` which define two new types – `Vector` and `Matrix`, as well as the mathematical operations that can be used with them.
 - `returnData.h` and `returnData.cpp` – as the name implies, those were used in order to read and return the data from the csv file provided. The class is deliberately not linked with any other classes and placed into a separate header file so that it can be easily accessed on its own and used for reading other files as well (by just changing the name of the file).
 - `porfolioSolver.h` and `poertfolioSolver.cpp` – those are the most important files in the project since they contain all the functions needed to create the Markowitz portfolio, as well as to execute the back-testing after that. 
 - `class inSample` and `class outOfSample` – those two classes inherit from `class Portfolio`. They have a very simple but a crucial role. They both include the virtual function `NPeriods()` which means that whenever we create an object from one of those classes, it will have access to all the public members/ functions of `class Portfolio`, but will execute them with a window size (number of periods) which applies only to the corresponding ‘child’ class. This aspect of the code is crucial for creating the back-testing algorithm.
